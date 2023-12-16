@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../js/index.js">
+    <title>Proyecto final</title>
+</head>
+<body>
+    <script>
+        alert("eres " + localStorage.getItem("nombre") + " y naciste el " + localStorage.getItem("nacimiento"))
+    </script>
+    <div class="top">
+        <div class="logo">
+            <a href="https://wa.me/50583598132">
+                <img src="../logos/whatsapp.png" alt="" class="logo-imagen">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="https://www.instagram.com/mynor.638/">
+                <img src="../logos/instagram.png" alt="" class="logo-imagen">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="https://www.facebook.com/maynor.guerrero.332?locale=es_LA">
+                <img src="../logos/facebook.png" alt="" class="logo-imagen">
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="banner">
+        <img src="../logos/banner.png" alt="" class="imagen-banner"> 
+            <span class="texto-1">VENTA de PERIFERICOS</span>
+            <br>
+            <strong class="titulo banner">RGB</strong>
+    </div>
+
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/carcasa.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Carcasas</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">500$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ROG Strix Helios White</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir" onchange="verificarCheckbox()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock no">agotados</span>
+                <img src="../imagenes/auriculares.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Auriculares</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">50$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">JBL 930BT 5.0</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir2" onchange="verificarCheckbox2()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/cooler.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Coolers</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">350$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ROG STRIX LC 360</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir3" onchange="verificarCheckbox3()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock no">agotados</span>
+                <img src="../imagenes/disco.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Discos</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">200$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ADATA HD770G 1T</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir4" onchange="verificarCheckbox4()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/fuente.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Fuentes de poder</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">200$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ROG Strix 850W Gold Aura Edition</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir5" onchange="verificarCheckbox5()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/mouse.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Mouses</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">40$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">Asus ROG Gladius</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir6" onchange="verificarCheckbox6()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock no">agotados</span>
+                <img src="../imagenes/control.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Controles</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">40$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">XPG SPECTRIX</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir7" onchange="verificarCheckbox7()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/tarjeta.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Tarjetas Graficas</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">250$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">tarjeta grafica GeoForce RTX 4090</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir8" onchange="verificarCheckbox8()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock no">agotados</span>
+                <img src="../imagenes/teclado.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Teclados</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">70$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ASUS X802 ROG Strix Scope</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir9" onchange="verificarCheckbox9()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/bocinas.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Bocinas</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">200$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">JBL Pulse 5</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir10" onchange="verificarCheckbox10()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/microfono.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Audifonos</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">30$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ROG Cetra True Wireless</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir11" onchange="verificarCheckbox11()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/laptop.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Laptops</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">1050$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ROG Strix G15</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir12" onchange="verificarCheckbox12()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/silla.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Sillas Gamers</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">200$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ROG Chariot</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir13" onchange="verificarCheckbox13()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock no">agotados</span>
+                <img src="../imagenes/router.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Routers</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">250$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">ROG STRIX GS-AX5400</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir14" onchange="verificarCheckbox14()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock yes">en venta</span>
+                <img src="../imagenes/adaptador.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Adaptadores</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">70$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">Asus Rog Clavis</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir15" onchange="verificarCheckbox15()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock no">agotados</span>
+                <img src="../imagenes/mousepad.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Mousepads</span>
+                <br>
+                <div class="precio">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">30$</span>
+                    <strong class="texto">especificaciones:</strong>
+                    <span class="especificaciones">Asus Rog Balteus</span>
+                    <div class="carrito">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir16" onchange="verificarCheckbox16()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+    <div class="contenedor-de-titulo">
+        <strong class="titulo de-ofertas">OFERTAS</strong>
+    </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock offer">-50%</span>
+                <img src="../imagenes/mochila.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Mochilas</span>
+                <br>
+                <div class="precio" style="top: 200px;">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">60$-50%</span>
+                    <span class="numero offer">->30$<-</span>
+                    <div class="carrito" style="padding-left: 0px">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir17" onchange="verificarCheckbox17()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock offer">-25%</span>
+                <img src="../imagenes/celular.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Celulares</span>
+                <br>
+                <div class="precio" style="top: 200px;">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">1000$-25%</span>
+                    <span class="numero offer">->750$<-</span>
+                    <div class="carrito" style="padding-left: 0px">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir18" onchange="verificarCheckbox18()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock offer">-30%</span>
+                <img src="../imagenes/Monitor.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Monitores</span>
+                <br>
+                <div class="precio" style="top: 200px;">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">1500$-30%</span>
+                    <span class="numero offer">->1050$<-</span>
+                    <div class="carrito" style="padding-left: 0px">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir19" onchange="verificarCheckbox19()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="parte1">
+                <span class="stock offer">-25%</span>
+                <img src="../imagenes/tablet.png" alt="" class="imagen">
+                <br>
+                <span class="objeto">Tabletas</span>
+                <br>
+                <div class="precio" style="top: 200px;">
+                    <strong class="texto">Precio:</strong>
+                    <span class="numero">500$-25%</span>
+                    <span class="numero offer">->375$<-</span>
+                    <div class="carrito" style="padding-left: 0px">
+                        <label for="añadir">
+                            <input type="checkbox" id="anadir20" onchange="verificarCheckbox20()">
+                            <span>agregar</span>
+                        </label>
+                    </div>
+                </div> 
+            </div>
+            <div class="parte2"></div>
+            <div class="parte3"></div>
+        </div>
+
+    </div>
+</body>
+<script src="../js/index.js">
+</script>
+</html>
